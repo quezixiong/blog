@@ -61,6 +61,15 @@
     <!--[if lt IE 9]><script src="//static.squarespace.com"></script><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/542eb7fee4b01c92dfeece71/37/4f9adc1524ac5df956fdf98f/542eb7fee4b01c92dfeece75/810/1426866050567/site.css?&filterFeatures=false&noMedia=true&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/542eb7fee4b01c92dfeece71/37/4f9adc1524ac5df956fdf98f/542eb7fee4b01c92dfeece75/810/1426866050567/site.css?&filterFeatures=false&noMedia=true&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/542eb7fee4b01c92dfeece71/37/4f9adc1524ac5df956fdf98f/542eb7fee4b01c92dfeece75/810/1426866050567/site.css?&filterFeatures=false&noMedia=true&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/542eb7fee4b01c92dfeece71/37/4f9adc1524ac5df956fdf98f/542eb7fee4b01c92dfeece75/810/1426866050567/site.css?&filterFeatures=false&noMedia=true&part=4"/><![endif]-->
     <!--[if !IE]> --><link rel="stylesheet" type="text/css" href="http://static1.squarespace.com/static/sitecss/542eb7fee4b01c92dfeece71/37/4f9adc1524ac5df956fdf98f/542eb7fee4b01c92dfeece75/810/1426866050567/site.css?&filterFeatures=false"/><!-- <![endif]-->
     <script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-36934816-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script><!-- End of Squarespace Headers -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="carousel/css/index.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="carousel/js/config.js"></script>
+    <script type="text/javascript" src="carousel/js/index.js"></script>
 </head>
 <body class="sidebar-text-alignment-left sidebar-position-left sidebar-fixed mobile-site-title-style-auto blog-sidebar-right gallery-style-fit enable-gallery-thumbnails initial-gallery-view-slideshow homepage-gallery-view-inherit thumbnail-aspect-ratio-auto gallery-controls-simple social-icon-style-normal  show-category-navigation product-list-titles-under product-list-alignment-center product-item-size-23-standard-vertical product-image-auto-crop product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav product-social-sharing  event-show-past-events event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts  event-item-back-link     hide-opentable-icons opentable-style-dark newsletter-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square button-style-raised button-corner-style-square native-currency-code-usd collection-548c8c64e4b0b330492e9070 collection-type-blog collection-layout-default view-list mobile-style-available" id="collection-548c8c64e4b0b330492e9070">
 
@@ -367,288 +376,315 @@
 
                 <div class="main-content" data-content-field="main-content">
                     <div class="article-list hfeed">
-
-
-
-                        <article class="hentry author-xiao-chang post-type-text article-index-1" id="article-5516aef2e4b00e328413be08" data-item-id="5516aef2e4b00e328413be08">
-
-                            <!--SPECIAL CONTENT-->
-
-
-
-
-                            <!--POST HEADER-->
-
-                            <header>
-                                <h1 class="entry-title">
-
-                                    <a href="/blog/2015/3/28/alumni-interview-series-yuan-liu-mom-of-a-special-daughter">Alumni Interview Series: Yuan Liu, Mom of a Special Daughter </a>
-
-                                </h1>
-                                <div class="entry-info">
-                                    <span class="published"><a href="/blog/2015/3/28/alumni-interview-series-yuan-liu-mom-of-a-special-daughter" title="Permalink" class="permalink"><time datetime="2015-03-28">March 28, 2015</time></a></span>
-
+<!--我新增的-->
+                        <div class="main-content1" >
+                            <div class="innerContent">
+                                <img id="imgpre" src="carousel/imgs/pre.png">
+                                <div class="innerimg">
+                                    <nobr>
+                                        <div id="div_img">
+                                        </div>
+                                    </nobr>
                                 </div>
-                            </header>
+                                <img id="imgnext" src="carousel/imgs/pre.png">
+                            </div>
+                            <ol class="ol_nav"></ol>
+                            <!--<button class="mybtn" id="btn_video">-->
+                                <!--<span class="glyphicon glyphicon-play btnplay" id="video_span"></span>-->
+                            <!--</button>-->
 
-                            <!--POST BODY-->
+                            <!--<video id="cur_video" width="500" height="380" controls="controls">-->
+                                <!--Your browser does not support the video tag.-->
+                                <!--<source src="" type="video/mp4">-->
+                            <!--</video>-->
+                        </div>
 
-                            <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1427550239096" id="item-5516aef2e4b00e328413be08"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:false,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;html&quot;:&quot;&lt;iframe src=\&quot;http://www.youtube.com/embed/9Qh9mPzQyKk?feature=youtu.be&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=9Qh9mPzQyKk&amp;feature=youtu.be&quot;,&quot;width&quot;:854,&quot;height&quot;:480,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/9Qh9mPzQyKk/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1427549919762_14837"><div class="sqs-block-content"><div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper" style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;http://www.youtube.com/embed/9Qh9mPzQyKk?feature=youtu.be&amp;wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name="YouTube"></div></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1427549919762_18490"><div class="sqs-block-content"><p>Youku:</p><p><a target="_blank" href="http://v.youku.com/v_show/id_XOTIxNTUxMDIw.html">http://v.youku.com/v_show/id_XOTIxNTUxMDIw.html</a></p><p> </p><p>Thanks "<a target="_blank" href="http://www.nytimes.com/packages/html/nyregion/1-in-8-million/">One in Eight Million</a>" for inspiration.</p></div></div></div></div></div></div>
+                        <!--<div class="modal" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+                            <!--<div class="modal-dialog">-->
+                                <!--<div class="modal-body">-->
+                                    <!--<video id="cur_video" width="500" height="380" controls="controls">-->
+                                        <!--Your browser does not support the video tag.-->
+                                        <!--<source src="" type="video/mp4">-->
+                                    <!--</video>-->
+                                    <!--<button id="btn_close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
 
 
+                        <!--<article class="hentry author-xiao-chang post-type-text article-index-1" id="article-5516aef2e4b00e328413be08" data-item-id="5516aef2e4b00e328413be08">-->
 
-                            <!--POST FOOTER-->
+                            <!--&lt;!&ndash;SPECIAL CONTENT&ndash;&gt;-->
 
-                            <footer>
-                                <div class="post-item-injection"></div>
-                                <div class="entry-info">
 
 
-                                </div>
-                                <div class="engagement">
 
+                            <!--&lt;!&ndash;POST HEADER&ndash;&gt;-->
 
-                                    <a href="/blog/2015/3/28/alumni-interview-series-yuan-liu-mom-of-a-special-daughter#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">
+                            <!--<header>-->
+                                <!--<h1 class="entry-title">-->
 
-                                        Comment
+                                    <!--<a href="/blog/2015/3/28/alumni-interview-series-yuan-liu-mom-of-a-special-daughter">Alumni Interview Series: Yuan Liu, Mom of a Special Daughter </a>-->
 
-                                    </a>
+                                <!--</h1>-->
+                                <!--<div class="entry-info">-->
+                                    <!--<span class="published"><a href="/blog/2015/3/28/alumni-interview-series-yuan-liu-mom-of-a-special-daughter" title="Permalink" class="permalink"><time datetime="2015-03-28">March 28, 2015</time></a></span>-->
 
+                                <!--</div>-->
+                            <!--</header>-->
 
-                                    <span class="sqs-simple-like" data-item-id="5516aef2e4b00e328413be08" data-like-count="1"><span class="like-icon"></span><span class="like-count"></span></span>
-                                    <span class="squarespace-social-buttons inline-style" data-system-data-id="1427550267276-CRT67AU37ODJHW4EKAN0" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/5516aef2e4b00e328413be08/1427722863716/" data-record-type="1" data-full-url="/blog/2015/3/28/alumni-interview-series-yuan-liu-mom-of-a-special-daughter" data-title="Alumni Interview Series: Yuan Liu, Mom of a Special Daughter "></span>
-                                </div>
-                            </footer>
+                            <!--&lt;!&ndash;POST BODY&ndash;&gt;-->
 
+                            <!--<div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1427550239096" id="item-5516aef2e4b00e328413be08"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:false,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;html&quot;:&quot;&lt;iframe src=\&quot;http://www.youtube.com/embed/9Qh9mPzQyKk?feature=youtu.be&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=9Qh9mPzQyKk&amp;feature=youtu.be&quot;,&quot;width&quot;:854,&quot;height&quot;:480,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/9Qh9mPzQyKk/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1427549919762_14837"><div class="sqs-block-content"><div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper" style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;http://www.youtube.com/embed/9Qh9mPzQyKk?feature=youtu.be&amp;wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name="YouTube"></div></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1427549919762_18490"><div class="sqs-block-content"><p>Youku:</p><p><a target="_blank" href="http://v.youku.com/v_show/id_XOTIxNTUxMDIw.html">http://v.youku.com/v_show/id_XOTIxNTUxMDIw.html</a></p><p> </p><p>Thanks "<a target="_blank" href="http://www.nytimes.com/packages/html/nyregion/1-in-8-million/">One in Eight Million</a>" for inspiration.</p></div></div></div></div></div></div>-->
 
-                        </article>
-                        <div class="post-divider"></div>
 
 
+                            <!--&lt;!&ndash;POST FOOTER&ndash;&gt;-->
 
-                        <article class="hentry category-documentary category-alumni-interview-series tag-tsinghua tag-gavin tag-video-games tag-inter author-xiao-chang post-type-text article-index-2" id="article-54df6009e4b0f4a6ba2c9745" data-item-id="54df6009e4b0f4a6ba2c9745">
+                            <!--<footer>-->
+                                <!--<div class="post-item-injection"></div>-->
+                                <!--<div class="entry-info">-->
 
-                            <!--SPECIAL CONTENT-->
 
+                                <!--</div>-->
+                                <!--<div class="engagement">-->
 
 
+                                    <!--<a href="/blog/2015/3/28/alumni-interview-series-yuan-liu-mom-of-a-special-daughter#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">-->
 
-                            <!--POST HEADER-->
+                                        <!--Comment-->
 
-                            <header>
-                                <h1 class="entry-title">
+                                    <!--</a>-->
 
-                                    <a href="/blog/2015/2/14/alumni-interview-series-honghao-zhu-a-life-of-games">Alumni Interview Series: Honghao Zhu, A Life of Games</a>
 
-                                </h1>
-                                <div class="entry-info">
-                                    <span class="published"><a href="/blog/2015/2/14/alumni-interview-series-honghao-zhu-a-life-of-games" title="Permalink" class="permalink"><time datetime="2015-02-14">February 14, 2015</time></a></span>
-                                    in <span class="category"><a href="/blog/?category=documentary" rel="tag">documentary</a>, <a href="/blog/?category=alumni interview series" rel="tag">alumni interview series</a></span>
-                                </div>
-                            </header>
+                                    <!--<span class="sqs-simple-like" data-item-id="5516aef2e4b00e328413be08" data-like-count="1"><span class="like-icon"></span><span class="like-count"></span></span>-->
+                                    <!--<span class="squarespace-social-buttons inline-style" data-system-data-id="1427550267276-CRT67AU37ODJHW4EKAN0" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/5516aef2e4b00e328413be08/1427722863716/" data-record-type="1" data-full-url="/blog/2015/3/28/alumni-interview-series-yuan-liu-mom-of-a-special-daughter" data-title="Alumni Interview Series: Yuan Liu, Mom of a Special Daughter "></span>-->
+                                <!--</div>-->
+                            <!--</footer>-->
 
-                            <!--POST BODY-->
 
-                            <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1423925285757" id="item-54df6009e4b0f4a6ba2c9745"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:false,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&lt;p&gt;\u6731\u6D2A\u6D69\uFF0C06\u7EA7\uFF0C\u4EBA\u6587\u5B66\u9662\u65E5\u8BED\u7CFB\u3002 \u4EB2\u7231\u7684\u5C0F\u5E08\u5F1F\uFF0C\u5728\u4ED6\u5FEB\u8981\u79BB\u5F00\u7F8E\u56FD\u7684\u65F6\u5019\u5BF9\u4ED6\u5185\u5FC3\u7684\u6E38\u620F\u4E16\u754C\u6709\u4E86\u66F4\u591A\u7684\u4E86\u89E3\u3002\u6E38\u620F\u4E8E\u4ED6\uFF0C\u4E0D\u53EA\u662F\u8C03\u5242\u548C\u653E\u677E\uFF0C\u66F4\u662F\u751F\u6D3B\u7684\u6D53\u7F29\u548C\u5FC3\u5FC3\u5FF5\u5FF5\u7684\u68A6\u60F3\u3002\u613F\u672A\u6765\u7684\u6E38\u620F\u4E4B\u8DEF\u5145\u6EE1\u5FEB\u4E50\u3002&lt;/p&gt;&quot;,&quot;source&quot;:&quot;&lt;p&gt;\u6731\u6D2A\u6D69\uFF0C06\u7EA7\uFF0C\u4EBA\u6587\u5B66\u9662\u65E5\u8BED\u7CFB\u3002 \u4EB2\u7231\u7684\u5C0F\u5E08\u5F1F\uFF0C\u5728\u4ED6\u5FEB\u8981\u79BB\u5F00\u7F8E\u56FD\u7684\u65F6\u5019\u5BF9\u4ED6\u5185\u5FC3\u7684\u6E38\u620F\u4E16\u754C\u6709\u4E86\u66F4\u591A\u7684\u4E86\u89E3\u3002\u6E38\u620F\u4E8E\u4ED6\uFF0C\u4E0D\u53EA\u662F\u8C03\u5242\u548C\u653E\u677E\uFF0C\u66F4\u662F\u751F\u6D3B\u7684\u6D53\u7F29\u548C\u5FC3\u5FC3\u5FF5\u5FF5\u7684\u68A6\u60F3\u3002\u613F\u672A\u6765\u7684\u6E38\u620F\u4E4B\u8DEF\u5145\u6EE1\u5FEB\u4E50\u3002&lt;/p&gt;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;html&quot;:&quot;&lt;iframe src=\&quot;http://www.youtube.com/embed/zR2rBK4cLtI?feature=youtu.be&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=zR2rBK4cLtI&amp;feature=youtu.be&quot;,&quot;width&quot;:854,&quot;height&quot;:480,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/zR2rBK4cLtI/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1423925244210_21337"><div class="sqs-block-content"><div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper" style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;http://www.youtube.com/embed/zR2rBK4cLtI?feature=youtu.be&amp;wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name="YouTube"></div></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-7b57df885e5e7de34380"><div class="sqs-block-content"><p>朱洪浩，06级，人文学院日语系。</p><p>亲爱的小师弟，在他快要离开美国的时候对他内心的游戏世界有了更多的了解。游戏于他，不只是调剂和放松，更是生活的浓缩和心心念念的梦想。愿未来的游戏之路充满快乐。</p><p>优酷链接：http://v.youku.com/v_show/id_XODkzNDg4OTQ4.html</p><p>Thanks "One in Eight Million" for inspirations.</p></div></div></div></div></div></div>
+                        <!--</article>-->
+                        <!--<div class="post-divider"></div>-->
 
 
 
-                            <!--POST FOOTER-->
+                        <!--<article class="hentry category-documentary category-alumni-interview-series tag-tsinghua tag-gavin tag-video-games tag-inter author-xiao-chang post-type-text article-index-2" id="article-54df6009e4b0f4a6ba2c9745" data-item-id="54df6009e4b0f4a6ba2c9745">-->
 
-                            <footer>
-                                <div class="post-item-injection"></div>
-                                <div class="entry-info">
+                            <!--&lt;!&ndash;SPECIAL CONTENT&ndash;&gt;-->
 
-                                    <span class="tags">Tags: <a href="/blog/?tag=tsinghua#show-archive" rel="tag">tsinghua</a>, <a href="/blog/?tag=gavin#show-archive" rel="tag">gavin</a>, <a href="/blog/?tag=video+games#show-archive" rel="tag">video games</a>, <a href="/blog/?tag=inter#show-archive" rel="tag">inter</a></span>
-                                </div>
-                                <div class="engagement">
 
 
-                                    <a href="/blog/2015/2/14/alumni-interview-series-honghao-zhu-a-life-of-games#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">
 
-                                        Comment
+                            <!--&lt;!&ndash;POST HEADER&ndash;&gt;-->
 
-                                    </a>
+                            <!--<header>-->
+                                <!--<h1 class="entry-title">-->
 
+                                    <!--<a href="/blog/2015/2/14/alumni-interview-series-honghao-zhu-a-life-of-games">Alumni Interview Series: Honghao Zhu, A Life of Games</a>-->
 
-                                    <span class="sqs-simple-like" data-item-id="54df6009e4b0f4a6ba2c9745" data-like-count="0"><span class="like-icon"></span><span class="like-count"></span></span>
-                                    <span class="squarespace-social-buttons inline-style" data-system-data-id="1423925535879-O9Q8AEHJ2UNSOSG7FPHX" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/54df6009e4b0f4a6ba2c9745/1423925547205/" data-record-type="1" data-full-url="/blog/2015/2/14/alumni-interview-series-honghao-zhu-a-life-of-games" data-title="Alumni Interview Series: Honghao Zhu, A Life of Games"></span>
-                                </div>
-                            </footer>
+                                <!--</h1>-->
+                                <!--<div class="entry-info">-->
+                                    <!--<span class="published"><a href="/blog/2015/2/14/alumni-interview-series-honghao-zhu-a-life-of-games" title="Permalink" class="permalink"><time datetime="2015-02-14">February 14, 2015</time></a></span>-->
+                                    <!--in <span class="category"><a href="/blog/?category=documentary" rel="tag">documentary</a>, <a href="/blog/?category=alumni interview series" rel="tag">alumni interview series</a></span>-->
+                                <!--</div>-->
+                            <!--</header>-->
 
+                            <!--&lt;!&ndash;POST BODY&ndash;&gt;-->
 
-                        </article>
-                        <div class="post-divider"></div>
+                            <!--<div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1423925285757" id="item-54df6009e4b0f4a6ba2c9745"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:false,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&lt;p&gt;\u6731\u6D2A\u6D69\uFF0C06\u7EA7\uFF0C\u4EBA\u6587\u5B66\u9662\u65E5\u8BED\u7CFB\u3002 \u4EB2\u7231\u7684\u5C0F\u5E08\u5F1F\uFF0C\u5728\u4ED6\u5FEB\u8981\u79BB\u5F00\u7F8E\u56FD\u7684\u65F6\u5019\u5BF9\u4ED6\u5185\u5FC3\u7684\u6E38\u620F\u4E16\u754C\u6709\u4E86\u66F4\u591A\u7684\u4E86\u89E3\u3002\u6E38\u620F\u4E8E\u4ED6\uFF0C\u4E0D\u53EA\u662F\u8C03\u5242\u548C\u653E\u677E\uFF0C\u66F4\u662F\u751F\u6D3B\u7684\u6D53\u7F29\u548C\u5FC3\u5FC3\u5FF5\u5FF5\u7684\u68A6\u60F3\u3002\u613F\u672A\u6765\u7684\u6E38\u620F\u4E4B\u8DEF\u5145\u6EE1\u5FEB\u4E50\u3002&lt;/p&gt;&quot;,&quot;source&quot;:&quot;&lt;p&gt;\u6731\u6D2A\u6D69\uFF0C06\u7EA7\uFF0C\u4EBA\u6587\u5B66\u9662\u65E5\u8BED\u7CFB\u3002 \u4EB2\u7231\u7684\u5C0F\u5E08\u5F1F\uFF0C\u5728\u4ED6\u5FEB\u8981\u79BB\u5F00\u7F8E\u56FD\u7684\u65F6\u5019\u5BF9\u4ED6\u5185\u5FC3\u7684\u6E38\u620F\u4E16\u754C\u6709\u4E86\u66F4\u591A\u7684\u4E86\u89E3\u3002\u6E38\u620F\u4E8E\u4ED6\uFF0C\u4E0D\u53EA\u662F\u8C03\u5242\u548C\u653E\u677E\uFF0C\u66F4\u662F\u751F\u6D3B\u7684\u6D53\u7F29\u548C\u5FC3\u5FC3\u5FF5\u5FF5\u7684\u68A6\u60F3\u3002\u613F\u672A\u6765\u7684\u6E38\u620F\u4E4B\u8DEF\u5145\u6EE1\u5FEB\u4E50\u3002&lt;/p&gt;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;html&quot;:&quot;&lt;iframe src=\&quot;http://www.youtube.com/embed/zR2rBK4cLtI?feature=youtu.be&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=zR2rBK4cLtI&amp;feature=youtu.be&quot;,&quot;width&quot;:854,&quot;height&quot;:480,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/zR2rBK4cLtI/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1423925244210_21337"><div class="sqs-block-content"><div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper" style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;http://www.youtube.com/embed/zR2rBK4cLtI?feature=youtu.be&amp;wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name="YouTube"></div></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-7b57df885e5e7de34380"><div class="sqs-block-content"><p>朱洪浩，06级，人文学院日语系。</p><p>亲爱的小师弟，在他快要离开美国的时候对他内心的游戏世界有了更多的了解。游戏于他，不只是调剂和放松，更是生活的浓缩和心心念念的梦想。愿未来的游戏之路充满快乐。</p><p>优酷链接：http://v.youku.com/v_show/id_XODkzNDg4OTQ4.html</p><p>Thanks "One in Eight Million" for inspirations.</p></div></div></div></div></div></div>-->
 
 
 
-                        <article class="hentry category-alumni-interview-series tag-leo tag-tsinghua tag-interview tag-hotel tag-capella tag-georgetown author-xiao-chang post-type-text article-index-3" id="article-54d53994e4b0237ad2e730a1" data-item-id="54d53994e4b0237ad2e730a1">
+                            <!--&lt;!&ndash;POST FOOTER&ndash;&gt;-->
 
-                            <!--SPECIAL CONTENT-->
+                            <!--<footer>-->
+                                <!--<div class="post-item-injection"></div>-->
+                                <!--<div class="entry-info">-->
 
+                                    <!--<span class="tags">Tags: <a href="/blog/?tag=tsinghua#show-archive" rel="tag">tsinghua</a>, <a href="/blog/?tag=gavin#show-archive" rel="tag">gavin</a>, <a href="/blog/?tag=video+games#show-archive" rel="tag">video games</a>, <a href="/blog/?tag=inter#show-archive" rel="tag">inter</a></span>-->
+                                <!--</div>-->
+                                <!--<div class="engagement">-->
 
 
+                                    <!--<a href="/blog/2015/2/14/alumni-interview-series-honghao-zhu-a-life-of-games#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">-->
 
-                            <!--POST HEADER-->
+                                        <!--Comment-->
 
-                            <header>
-                                <h1 class="entry-title">
+                                    <!--</a>-->
 
-                                    <a href="/blog/2015/2/6/alumni-interview-series-leo-a-hotel-enthusiast">Alumni Interview Series: Leo Liao, a Hotel Enthusiast </a>
 
-                                </h1>
-                                <div class="entry-info">
-                                    <span class="published"><a href="/blog/2015/2/6/alumni-interview-series-leo-a-hotel-enthusiast" title="Permalink" class="permalink"><time datetime="2015-02-06">February 06, 2015</time></a></span>
-                                    in <span class="category"><a href="/blog/?category=alumni interview series" rel="tag">alumni interview series</a></span>
-                                </div>
-                            </header>
+                                    <!--<span class="sqs-simple-like" data-item-id="54df6009e4b0f4a6ba2c9745" data-like-count="0"><span class="like-icon"></span><span class="like-count"></span></span>-->
+                                    <!--<span class="squarespace-social-buttons inline-style" data-system-data-id="1423925535879-O9Q8AEHJ2UNSOSG7FPHX" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/54df6009e4b0f4a6ba2c9745/1423925547205/" data-record-type="1" data-full-url="/blog/2015/2/14/alumni-interview-series-honghao-zhu-a-life-of-games" data-title="Alumni Interview Series: Honghao Zhu, A Life of Games"></span>-->
+                                <!--</div>-->
+                            <!--</footer>-->
 
-                            <!--POST BODY-->
 
-                            <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1423260120206" id="item-54d53994e4b0237ad2e730a1"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:true,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;customThumb&quot;:&quot;54d539b0e4b052337c51ee63&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;//www.youtube.com/embed/YsUrKMaChDs?feature=youtu.be&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=YsUrKMaChDs&amp;feature=youtu.be&quot;,&quot;width&quot;:854,&quot;height&quot;:480,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/YsUrKMaChDs/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1423260049418_14496"><div class="sqs-block-content"><div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper" style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;//www.youtube.com/embed/YsUrKMaChDs?feature=youtu.be&amp;wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name="YouTube"><div class="sqs-video-overlay" style="opacity: 0;"><img data-src="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/t/54d539b0e4b052337c51ee63/1423260082348/leo-13.jpg" data-load="false" data-image-focal-point="0.5,0.5" /><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-4ffae7c170eeda0671a5"><div class="sqs-block-content"><p>Thanks One in Eight Million for inspiration.</p></div></div></div></div></div></div>
+                        <!--</article>-->
+                        <!--<div class="post-divider"></div>-->
 
 
 
-                            <!--POST FOOTER-->
+                        <!--<article class="hentry category-alumni-interview-series tag-leo tag-tsinghua tag-interview tag-hotel tag-capella tag-georgetown author-xiao-chang post-type-text article-index-3" id="article-54d53994e4b0237ad2e730a1" data-item-id="54d53994e4b0237ad2e730a1">-->
 
-                            <footer>
-                                <div class="post-item-injection"></div>
-                                <div class="entry-info">
+                            <!--&lt;!&ndash;SPECIAL CONTENT&ndash;&gt;-->
 
-                                    <span class="tags">Tags: <a href="/blog/?tag=leo#show-archive" rel="tag">leo</a>, <a href="/blog/?tag=tsinghua#show-archive" rel="tag">tsinghua</a>, <a href="/blog/?tag=interview#show-archive" rel="tag">interview</a>, <a href="/blog/?tag=hotel#show-archive" rel="tag">hotel</a>, <a href="/blog/?tag=capella#show-archive" rel="tag">capella</a>, <a href="/blog/?tag=georgetown#show-archive" rel="tag">georgetown</a></span>
-                                </div>
-                                <div class="engagement">
 
 
-                                    <a href="/blog/2015/2/6/alumni-interview-series-leo-a-hotel-enthusiast#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">
 
-                                        Comment
+                            <!--&lt;!&ndash;POST HEADER&ndash;&gt;-->
 
-                                    </a>
+                            <!--<header>-->
+                                <!--<h1 class="entry-title">-->
 
+                                    <!--<a href="/blog/2015/2/6/alumni-interview-series-leo-a-hotel-enthusiast">Alumni Interview Series: Leo Liao, a Hotel Enthusiast </a>-->
 
-                                    <span class="sqs-simple-like" data-item-id="54d53994e4b0237ad2e730a1" data-like-count="2"><span class="like-icon"></span><span class="like-count"></span></span>
-                                    <span class="squarespace-social-buttons inline-style" data-system-data-id="1423266841290-1ZABSVWX7EFVTDDVP1B3" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/54d53994e4b0237ad2e730a1/1423782555738/" data-record-type="1" data-full-url="/blog/2015/2/6/alumni-interview-series-leo-a-hotel-enthusiast" data-title="Alumni Interview Series: Leo Liao, a Hotel Enthusiast "></span>
-                                </div>
-                            </footer>
+                                <!--</h1>-->
+                                <!--<div class="entry-info">-->
+                                    <!--<span class="published"><a href="/blog/2015/2/6/alumni-interview-series-leo-a-hotel-enthusiast" title="Permalink" class="permalink"><time datetime="2015-02-06">February 06, 2015</time></a></span>-->
+                                    <!--in <span class="category"><a href="/blog/?category=alumni interview series" rel="tag">alumni interview series</a></span>-->
+                                <!--</div>-->
+                            <!--</header>-->
 
+                            <!--&lt;!&ndash;POST BODY&ndash;&gt;-->
 
-                        </article>
-                        <div class="post-divider"></div>
+                            <!--<div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1423260120206" id="item-54d53994e4b0237ad2e730a1"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:true,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;customThumb&quot;:&quot;54d539b0e4b052337c51ee63&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;//www.youtube.com/embed/YsUrKMaChDs?feature=youtu.be&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=YsUrKMaChDs&amp;feature=youtu.be&quot;,&quot;width&quot;:854,&quot;height&quot;:480,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/YsUrKMaChDs/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1423260049418_14496"><div class="sqs-block-content"><div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper" style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;//www.youtube.com/embed/YsUrKMaChDs?feature=youtu.be&amp;wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name="YouTube"><div class="sqs-video-overlay" style="opacity: 0;"><img data-src="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/t/54d539b0e4b052337c51ee63/1423260082348/leo-13.jpg" data-load="false" data-image-focal-point="0.5,0.5" /><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-4ffae7c170eeda0671a5"><div class="sqs-block-content"><p>Thanks One in Eight Million for inspiration.</p></div></div></div></div></div></div>-->
 
 
 
-                        <article class="hentry category-documentary category-alumni-interview-series tag-boston tag-tsinghua tag-peking-university tag-love author-xiao-chang post-type-text article-index-4" id="article-54c2e3fae4b01ba65f57bc0e" data-item-id="54c2e3fae4b01ba65f57bc0e">
+                            <!--&lt;!&ndash;POST FOOTER&ndash;&gt;-->
 
-                            <!--SPECIAL CONTENT-->
+                            <!--<footer>-->
+                                <!--<div class="post-item-injection"></div>-->
+                                <!--<div class="entry-info">-->
 
+                                    <!--<span class="tags">Tags: <a href="/blog/?tag=leo#show-archive" rel="tag">leo</a>, <a href="/blog/?tag=tsinghua#show-archive" rel="tag">tsinghua</a>, <a href="/blog/?tag=interview#show-archive" rel="tag">interview</a>, <a href="/blog/?tag=hotel#show-archive" rel="tag">hotel</a>, <a href="/blog/?tag=capella#show-archive" rel="tag">capella</a>, <a href="/blog/?tag=georgetown#show-archive" rel="tag">georgetown</a></span>-->
+                                <!--</div>-->
+                                <!--<div class="engagement">-->
 
 
+                                    <!--<a href="/blog/2015/2/6/alumni-interview-series-leo-a-hotel-enthusiast#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">-->
 
-                            <!--POST HEADER-->
+                                        <!--Comment-->
 
-                            <header>
-                                <h1 class="entry-title">
+                                    <!--</a>-->
 
-                                    <a href="/blog/2015/1/23/ru-ding-jian-fang">Alumni Interview Series: Ru Ding & Yun Zhang</a>
 
-                                </h1>
-                                <div class="entry-info">
-                                    <span class="published"><a href="/blog/2015/1/23/ru-ding-jian-fang" title="Permalink" class="permalink"><time datetime="2015-01-23">January 23, 2015</time></a></span>
-                                    in <span class="category"><a href="/blog/?category=documentary" rel="tag">documentary</a>, <a href="/blog/?category=alumni interview series" rel="tag">alumni interview series</a></span>
-                                </div>
-                            </header>
+                                    <!--<span class="sqs-simple-like" data-item-id="54d53994e4b0237ad2e730a1" data-like-count="2"><span class="like-icon"></span><span class="like-count"></span></span>-->
+                                    <!--<span class="squarespace-social-buttons inline-style" data-system-data-id="1423266841290-1ZABSVWX7EFVTDDVP1B3" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/54d53994e4b0237ad2e730a1/1423782555738/" data-record-type="1" data-full-url="/blog/2015/2/6/alumni-interview-series-leo-a-hotel-enthusiast" data-title="Alumni Interview Series: Leo Liao, a Hotel Enthusiast "></span>-->
+                                <!--</div>-->
+                            <!--</footer>-->
 
-                            <!--POST BODY-->
 
-                            <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1422058546090" id="item-54c2e3fae4b01ba65f57bc0e"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-below&quot;,&quot;overlay&quot;:false,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&lt;p&gt;A love story between a Tsinghua girl and a PKU Boy.&lt;/p&gt;&quot;,&quot;source&quot;:&quot;&lt;p&gt;A love story between a Tsinghua girl and a PKU Boy.&lt;/p&gt;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;html&quot;:&quot;&lt;iframe src=\&quot;http://www.youtube.com/embed/yOLfAIEuP3E?feature=youtu.be&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=yOLfAIEuP3E&amp;feature=youtu.be&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/yOLfAIEuP3E/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1422060876372_18049"><div class="sqs-block-content"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;http://www.youtube.com/embed/yOLfAIEuP3E?feature=youtu.be&amp;wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name=""></div><div  class="video-caption-wrapper"><div class="video-caption"><p>A love story between a Tsinghua girl and a PKU Boy.</p></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-d4382db05adc7e19cfce"><div class="sqs-block-content"><p>Youku:&nbsp;http://v.youku.com/v_show/id_XODc4MzgzNTMy.html</p><p>Thanks One in Eight Million for inspiration.</p></div></div></div></div></div></div>
+                        <!--</article>-->
+                        <!--<div class="post-divider"></div>-->
 
 
 
-                            <!--POST FOOTER-->
+                        <!--<article class="hentry category-documentary category-alumni-interview-series tag-boston tag-tsinghua tag-peking-university tag-love author-xiao-chang post-type-text article-index-4" id="article-54c2e3fae4b01ba65f57bc0e" data-item-id="54c2e3fae4b01ba65f57bc0e">-->
 
-                            <footer>
-                                <div class="post-item-injection"></div>
-                                <div class="entry-info">
+                            <!--&lt;!&ndash;SPECIAL CONTENT&ndash;&gt;-->
 
-                                    <span class="tags">Tags: <a href="/blog/?tag=boston#show-archive" rel="tag">boston</a>, <a href="/blog/?tag=tsinghua#show-archive" rel="tag">tsinghua</a>, <a href="/blog/?tag=peking+university#show-archive" rel="tag">peking university</a>, <a href="/blog/?tag=love#show-archive" rel="tag">love</a></span>
-                                </div>
-                                <div class="engagement">
 
 
-                                    <a href="/blog/2015/1/23/ru-ding-jian-fang#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">
 
-                                        Comment
+                            <!--&lt;!&ndash;POST HEADER&ndash;&gt;-->
 
-                                    </a>
+                            <!--<header>-->
+                                <!--<h1 class="entry-title">-->
 
+                                    <!--<a href="/blog/2015/1/23/ru-ding-jian-fang">Alumni Interview Series: Ru Ding & Yun Zhang</a>-->
 
-                                    <span class="sqs-simple-like" data-item-id="54c2e3fae4b01ba65f57bc0e" data-like-count="4"><span class="like-icon"></span><span class="like-count"></span></span>
-                                    <span class="squarespace-social-buttons inline-style" data-system-data-id="" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/54c2e3fae4b01ba65f57bc0e/1423782578722/" data-record-type="1" data-full-url="/blog/2015/1/23/ru-ding-jian-fang" data-title="Alumni Interview Series: Ru Ding &amp; Yun Zhang"></span>
-                                </div>
-                            </footer>
+                                <!--</h1>-->
+                                <!--<div class="entry-info">-->
+                                    <!--<span class="published"><a href="/blog/2015/1/23/ru-ding-jian-fang" title="Permalink" class="permalink"><time datetime="2015-01-23">January 23, 2015</time></a></span>-->
+                                    <!--in <span class="category"><a href="/blog/?category=documentary" rel="tag">documentary</a>, <a href="/blog/?category=alumni interview series" rel="tag">alumni interview series</a></span>-->
+                                <!--</div>-->
+                            <!--</header>-->
 
+                            <!--&lt;!&ndash;POST BODY&ndash;&gt;-->
 
-                        </article>
-                        <div class="post-divider"></div>
+                            <!--<div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1422058546090" id="item-54c2e3fae4b01ba65f57bc0e"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-below&quot;,&quot;overlay&quot;:false,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&lt;p&gt;A love story between a Tsinghua girl and a PKU Boy.&lt;/p&gt;&quot;,&quot;source&quot;:&quot;&lt;p&gt;A love story between a Tsinghua girl and a PKU Boy.&lt;/p&gt;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;html&quot;:&quot;&lt;iframe src=\&quot;http://www.youtube.com/embed/yOLfAIEuP3E?feature=youtu.be&amp;amp;wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=yOLfAIEuP3E&amp;feature=youtu.be&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/yOLfAIEuP3E/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1422060876372_18049"><div class="sqs-block-content"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;http://www.youtube.com/embed/yOLfAIEuP3E?feature=youtu.be&amp;wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name=""></div><div  class="video-caption-wrapper"><div class="video-caption"><p>A love story between a Tsinghua girl and a PKU Boy.</p></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-d4382db05adc7e19cfce"><div class="sqs-block-content"><p>Youku:&nbsp;http://v.youku.com/v_show/id_XODc4MzgzNTMy.html</p><p>Thanks One in Eight Million for inspiration.</p></div></div></div></div></div></div>-->
 
 
 
-                        <article class="hentry category-documentary category-alumni-interview-series tag-documentary tag-soccer tag-tsinghua tag-jian-fang tag-alex author-xiao-chang post-type-text article-index-5" id="article-548c8f23e4b00591d4b1c2de" data-item-id="548c8f23e4b00591d4b1c2de">
+                            <!--&lt;!&ndash;POST FOOTER&ndash;&gt;-->
 
-                            <!--SPECIAL CONTENT-->
+                            <!--<footer>-->
+                                <!--<div class="post-item-injection"></div>-->
+                                <!--<div class="entry-info">-->
 
+                                    <!--<span class="tags">Tags: <a href="/blog/?tag=boston#show-archive" rel="tag">boston</a>, <a href="/blog/?tag=tsinghua#show-archive" rel="tag">tsinghua</a>, <a href="/blog/?tag=peking+university#show-archive" rel="tag">peking university</a>, <a href="/blog/?tag=love#show-archive" rel="tag">love</a></span>-->
+                                <!--</div>-->
+                                <!--<div class="engagement">-->
 
 
+                                    <!--<a href="/blog/2015/1/23/ru-ding-jian-fang#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">-->
 
-                            <!--POST HEADER-->
+                                        <!--Comment-->
 
-                            <header>
-                                <h1 class="entry-title">
+                                    <!--</a>-->
 
-                                    <a href="/blog/2014/12/13/jian-fang-a-soccer-dad">Alumni Interview Series: Jian Fang, A Soccer Dad</a>
 
-                                </h1>
-                                <div class="entry-info">
-                                    <span class="published"><a href="/blog/2014/12/13/jian-fang-a-soccer-dad" title="Permalink" class="permalink"><time datetime="2014-12-13">December 13, 2014</time></a></span>
-                                    in <span class="category"><a href="/blog/?category=documentary" rel="tag">documentary</a>, <a href="/blog/?category=alumni interview series" rel="tag">alumni interview series</a></span>
-                                </div>
-                            </header>
+                                    <!--<span class="sqs-simple-like" data-item-id="54c2e3fae4b01ba65f57bc0e" data-like-count="4"><span class="like-icon"></span><span class="like-count"></span></span>-->
+                                    <!--<span class="squarespace-social-buttons inline-style" data-system-data-id="" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/54c2e3fae4b01ba65f57bc0e/1423782578722/" data-record-type="1" data-full-url="/blog/2015/1/23/ru-ding-jian-fang" data-title="Alumni Interview Series: Ru Ding &amp; Yun Zhang"></span>-->
+                                <!--</div>-->
+                            <!--</footer>-->
 
-                            <!--POST BODY-->
 
-                            <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1418497923575" id="item-548c8f23e4b00591d4b1c2de"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:true,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&lt;p&gt;\u65B9\u5065\uFF0C\u6E05\u534E\u5927\u5B66\u5316\u5B66\u5DE5\u7A0B\u7CFB\uFF0C95\u7EA7\u6821\u53CB\u30022003\u5E74\u6765\u5230\u7F8E\u56FD\uFF0C\u5DF2\u6709\u5341\u4F59\u4E2A\u5E74\u5934\u3002\u5982\u4ECA\u5DF2\u7ECF\u662F\u4E24\u4E2A\u5B69\u5B50\u7684\u7236\u4EB2\uFF0C\u4F46\u5BF9\u4E8E\u8DB3\u7403\u7684\u70ED\u7231\u4F9D\u7136\u4E0E\u65E5\u4FF1\u589E\u3002&lt;/p&gt;&quot;,&quot;source&quot;:&quot;&lt;p&gt;\u65B9\u5065\uFF0C\u6E05\u534E\u5927\u5B66\u5316\u5B66\u5DE5\u7A0B\u7CFB\uFF0C95\u7EA7\u6821\u53CB\u30022003\u5E74\u6765\u5230\u7F8E\u56FD\uFF0C\u5DF2\u6709\u5341\u4F59\u4E2A\u5E74\u5934\u3002\u5982\u4ECA\u5DF2\u7ECF\u662F\u4E24\u4E2A\u5B69\u5B50\u7684\u7236\u4EB2\uFF0C\u4F46\u5BF9\u4E8E\u8DB3\u7403\u7684\u70ED\u7231\u4F9D\u7136\u4E0E\u65E5\u4FF1\u589E\u3002&lt;/p&gt;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;customThumb&quot;:&quot;548c8f79e4b0dc7d9090a526&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;//www.youtube.com/embed/z8ReVRaUd1k?wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=z8ReVRaUd1k&quot;,&quot;width&quot;:854,&quot;height&quot;:480,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/z8ReVRaUd1k/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1418497095593_79425"><div class="sqs-block-content"><div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper" style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;//www.youtube.com/embed/z8ReVRaUd1k?wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name="YouTube"><div class="sqs-video-overlay" style="opacity: 0;"><img data-src="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/t/548c8f79e4b0dc7d9090a526/1418497915570/jiange_edited-19.jpg" data-load="false" data-image-focal-point="0.5,0.5" /><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-34a4aaf48121442be54c"><div class="sqs-block-content"><p>Jian Fang, class of 99, Chemical Engineering, Tsinghua University. Jian has came to U.S. for over 10 years since 2003. As a father of two, his passion for soccer has only increased with his love toward the family.</p><h3>Video on Youku</h3><p>http://v.youku.com/v_show/id_XODQ4MjMyNDcy.html</p><blockquote>In honor of the NYT series, "<a target="_blank" href="http://www.nytimes.com/packages/html/nyregion/1-in-8-million/"><em>One in Eight Million</em></a>".</blockquote></div></div></div></div></div></div>
+                        <!--</article>-->
+                        <!--<div class="post-divider"></div>-->
 
 
 
-                            <!--POST FOOTER-->
+                        <!--<article class="hentry category-documentary category-alumni-interview-series tag-documentary tag-soccer tag-tsinghua tag-jian-fang tag-alex author-xiao-chang post-type-text article-index-5" id="article-548c8f23e4b00591d4b1c2de" data-item-id="548c8f23e4b00591d4b1c2de">-->
 
-                            <footer>
-                                <div class="post-item-injection"></div>
-                                <div class="entry-info">
+                            <!--&lt;!&ndash;SPECIAL CONTENT&ndash;&gt;-->
+                            <!--&lt;!&ndash;POST HEADER&ndash;&gt;-->
 
-                                    <span class="tags">Tags: <a href="/blog/?tag=documentary#show-archive" rel="tag">documentary</a>, <a href="/blog/?tag=soccer#show-archive" rel="tag">soccer</a>, <a href="/blog/?tag=tsinghua#show-archive" rel="tag">tsinghua</a>, <a href="/blog/?tag=jian+fang#show-archive" rel="tag">jian fang</a>, <a href="/blog/?tag=alex#show-archive" rel="tag">alex</a></span>
-                                </div>
-                                <div class="engagement">
+                            <!--<header>-->
+                                <!--<h1 class="entry-title">-->
 
+                                    <!--<a href="/blog/2014/12/13/jian-fang-a-soccer-dad">Alumni Interview Series: Jian Fang, A Soccer Dad</a>-->
 
-                                    <a href="/blog/2014/12/13/jian-fang-a-soccer-dad#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">
+                                <!--</h1>-->
+                                <!--<div class="entry-info">-->
+                                    <!--<span class="published"><a href="/blog/2014/12/13/jian-fang-a-soccer-dad" title="Permalink" class="permalink"><time datetime="2014-12-13">December 13, 2014</time></a></span>-->
+                                    <!--in <span class="category"><a href="/blog/?category=documentary" rel="tag">documentary</a>, <a href="/blog/?category=alumni interview series" rel="tag">alumni interview series</a></span>-->
+                                <!--</div>-->
+                            <!--</header>-->
 
-                                        Comment
+                            <!--&lt;!&ndash;POST BODY&ndash;&gt;-->
 
-                                    </a>
+                            <!--<div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1418497923575" id="item-548c8f23e4b00591d4b1c2de"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block video-block sqs-block-video" data-block-json="&#123;&quot;layout&quot;:&quot;caption-hidden&quot;,&quot;overlay&quot;:true,&quot;description&quot;:&#123;&quot;html&quot;:&quot;&lt;p&gt;\u65B9\u5065\uFF0C\u6E05\u534E\u5927\u5B66\u5316\u5B66\u5DE5\u7A0B\u7CFB\uFF0C95\u7EA7\u6821\u53CB\u30022003\u5E74\u6765\u5230\u7F8E\u56FD\uFF0C\u5DF2\u6709\u5341\u4F59\u4E2A\u5E74\u5934\u3002\u5982\u4ECA\u5DF2\u7ECF\u662F\u4E24\u4E2A\u5B69\u5B50\u7684\u7236\u4EB2\uFF0C\u4F46\u5BF9\u4E8E\u8DB3\u7403\u7684\u70ED\u7231\u4F9D\u7136\u4E0E\u65E5\u4FF1\u589E\u3002&lt;/p&gt;&quot;,&quot;source&quot;:&quot;&lt;p&gt;\u65B9\u5065\uFF0C\u6E05\u534E\u5927\u5B66\u5316\u5B66\u5DE5\u7A0B\u7CFB\uFF0C95\u7EA7\u6821\u53CB\u30022003\u5E74\u6765\u5230\u7F8E\u56FD\uFF0C\u5DF2\u6709\u5341\u4F59\u4E2A\u5E74\u5934\u3002\u5982\u4ECA\u5DF2\u7ECF\u662F\u4E24\u4E2A\u5B69\u5B50\u7684\u7236\u4EB2\uFF0C\u4F46\u5BF9\u4E8E\u8DB3\u7403\u7684\u70ED\u7231\u4F9D\u7136\u4E0E\u65E5\u4FF1\u589E\u3002&lt;/p&gt;&quot;&#125;,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;customThumb&quot;:&quot;548c8f79e4b0dc7d9090a526&quot;,&quot;html&quot;:&quot;&lt;iframe src=\&quot;//www.youtube.com/embed/z8ReVRaUd1k?wmode=opaque&amp;amp;enablejsapi=1\&quot; height=\&quot;480\&quot; width=\&quot;854\&quot; scrolling=\&quot;no\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=z8ReVRaUd1k&quot;,&quot;width&quot;:854,&quot;height&quot;:480,&quot;providerName&quot;:&quot;YouTube&quot;,&quot;thumbnailUrl&quot;:&quot;http://i.ytimg.com/vi/z8ReVRaUd1k/hqdefault.jpg&quot;,&quot;resolvedBy&quot;:&quot;youtube&quot;&#125;" data-block-type="32" id="block-yui_3_17_2_1_1418497095593_79425"><div class="sqs-block-content"><div class="intrinsic" style="max-width:100%"><div class="embed-block-wrapper" style="padding-bottom:56.20609%;"><div class="sqs-video-wrapper" data-html="&lt;iframe src=&quot;//www.youtube.com/embed/z8ReVRaUd1k?wmode=opaque&amp;enablejsapi=1&quot; height=&quot;480&quot; width=&quot;854&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;<br/>&lt;/iframe&gt;" data-provider-name="YouTube"><div class="sqs-video-overlay" style="opacity: 0;"><img data-src="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/t/548c8f79e4b0dc7d9090a526/1418497915570/jiange_edited-19.jpg" data-load="false" data-image-focal-point="0.5,0.5" /><div class="sqs-video-opaque"></div><div class="sqs-video-icon"></div></div></div></div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-34a4aaf48121442be54c"><div class="sqs-block-content"><p>Jian Fang, class of 99, Chemical Engineering, Tsinghua University. Jian has came to U.S. for over 10 years since 2003. As a father of two, his passion for soccer has only increased with his love toward the family.</p><h3>Video on Youku</h3><p>http://v.youku.com/v_show/id_XODQ4MjMyNDcy.html</p><blockquote>In honor of the NYT series, "<a target="_blank" href="http://www.nytimes.com/packages/html/nyregion/1-in-8-million/"><em>One in Eight Million</em></a>".</blockquote></div></div></div></div></div></div>-->
 
 
-                                    <span class="sqs-simple-like" data-item-id="548c8f23e4b00591d4b1c2de" data-like-count="4"><span class="like-icon"></span><span class="like-count"></span></span>
-                                    <span class="squarespace-social-buttons inline-style" data-system-data-id="" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/548c8f23e4b00591d4b1c2de/1423260428752/" data-record-type="1" data-full-url="/blog/2014/12/13/jian-fang-a-soccer-dad" data-title="Alumni Interview Series: Jian Fang, A Soccer Dad"></span>
-                                </div>
-                            </footer>
 
+                            <!--&lt;!&ndash;POST FOOTER&ndash;&gt;-->
 
-                        </article>
-                        <div class="post-divider"></div>
+                            <!--<footer>-->
+                                <!--<div class="post-item-injection"></div>-->
+                                <!--<div class="entry-info">-->
 
+                                    <!--<span class="tags">Tags: <a href="/blog/?tag=documentary#show-archive" rel="tag">documentary</a>, <a href="/blog/?tag=soccer#show-archive" rel="tag">soccer</a>, <a href="/blog/?tag=tsinghua#show-archive" rel="tag">tsinghua</a>, <a href="/blog/?tag=jian+fang#show-archive" rel="tag">jian fang</a>, <a href="/blog/?tag=alex#show-archive" rel="tag">alex</a></span>-->
+                                <!--</div>-->
+                                <!--<div class="engagement">-->
 
+
+                                    <!--<a href="/blog/2014/12/13/jian-fang-a-soccer-dad#comments-placeholder" data-toggle-target="#comments-placeholder" class="comment-link">-->
+
+                                        <!--Comment-->
+
+                                    <!--</a>-->
+
+
+                                    <!--<span class="sqs-simple-like" data-item-id="548c8f23e4b00591d4b1c2de" data-like-count="4"><span class="like-icon"></span><span class="like-count"></span></span>-->
+                                    <!--<span class="squarespace-social-buttons inline-style" data-system-data-id="" data-asset-url="http://static1.squarespace.com/static/542eb7fee4b01c92dfeece71/548c8c64e4b0b330492e9070/548c8f23e4b00591d4b1c2de/1423260428752/" data-record-type="1" data-full-url="/blog/2014/12/13/jian-fang-a-soccer-dad" data-title="Alumni Interview Series: Jian Fang, A Soccer Dad"></span>-->
+                                <!--</div>-->
+                            <!--</footer>-->
+
+
+                        <!--</article>-->
+                        <!--<div class="post-divider"></div>-->
 
                     </div>
 
