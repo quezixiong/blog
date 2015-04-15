@@ -18,16 +18,27 @@ $(document).ready(function() {
     for(var i = 0; i < videonum; i++){
         $(".ol_nav").append("<li id=li"+i+"></li>");
     }
-    //$("article header").append(videolist[0].headerinfo);
-    //$("article footer").append(videolist[0].footerinfo);
-    //$("article #content").append(videolist[0].content);
-    //$(".sqs-block-content iframe").src="";
     //当前视频预览图显示初始化
     var current = 0; //记录当前视频、视频预览
     switch_to(current);
     //箭头导航事件添加
-    $('#imgpre').click(function(){switch_to(current-1);});
-    $('#imgnext').click(function(){switch_to(current+1);});
+    var cur_video = document.getElementsByTagName("iframe");
+
+    $('#imgpre').click(function(){
+        switch_to(current-1);
+        cur_video[current+1].src = videolist[current+1].videosrc;
+        if(current - 1 < 0){
+            switch_to(4);
+        }
+    });
+    $('#imgnext').click(function(){
+        switch_to(current+1);
+        cur_video[current-1].src = videolist[current-1].videosrc;
+
+        if(current + 1 > videonum){
+            switch_to(0);
+        }
+    });
 
     for(var i = 0; i < videonum; i++){
         //方块导航事件添加
@@ -75,37 +86,15 @@ $(document).ready(function() {
     //});
 
     function switch_to(id){
-        if(id < 0 || id >= videonum)
-            return;
+        //if(id < 0 || id >= videonum)
+        //    return;
         $('.innerimg').animate({left:'-='+(id-current)*510+'px'},500,function(){});
-
-        //$("article header").empty().append(videolist[id].headerinfo);
-        //$("article footer").empty().append(videolist[id].footerinfo);
-        //$("article #content").empty().append(videolist[id].content);
-        //$(".sqs-block-content iframe").src="";
-        //$('#article-title').animate({left:'-='+(id-current)*510+'px'},500,function(){});
-
-        //$("#article-title").empty().append(videolist[id].headerinfo);
-
         current = id;
         $('li').removeClass("hover-style");
         $('#li'+current).addClass("hover-style");
         //$('img').removeClass("img-current");
         //$('#img'+ current).addClass("img-current");
     }
-////新增的
-//    $("nav a").click(function(){
-//        $("nav a").css("opacity","1");
-//        $(this).css("opacity","0.3");
-//    });
-//
-//    $(".iconback").hover(function(){
-//        $(".iconback").css("opacity","0.5");
-//        $(this).css("opacity","1");
-//    },function(){
-//        $(".iconback").css("opacity","1");
-//
-//    });
 });
 
 
