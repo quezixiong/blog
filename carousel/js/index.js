@@ -12,6 +12,7 @@ $(document).ready(function() {
 
     for(var i = 0; i < videonum; i++){
         $("#div_img").append("<iframe id='cur_video"+i+"' width='450' height='320' src='"+ videolist[i].videosrc + " 'frameborder='1' allowfullscreen></iframe>");
+        $("#article-title").append("<div id='title"+i+"'>"+videolist[i].headerinfo+"</div>");
     }
     //根据视频个数生成下面方块导航列表
     for(var i = 0; i < videonum; i++){
@@ -77,10 +78,15 @@ $(document).ready(function() {
         if(id < 0 || id >= videonum)
             return;
         $('.innerimg').animate({left:'-='+(id-current)*510+'px'},500,function(){});
+
         //$("article header").empty().append(videolist[id].headerinfo);
         //$("article footer").empty().append(videolist[id].footerinfo);
         //$("article #content").empty().append(videolist[id].content);
         //$(".sqs-block-content iframe").src="";
+        //$('#article-title').animate({left:'-='+(id-current)*510+'px'},500,function(){});
+
+        //$("#article-title").empty().append(videolist[id].headerinfo);
+
         current = id;
         $('li').removeClass("hover-style");
         $('#li'+current).addClass("hover-style");
