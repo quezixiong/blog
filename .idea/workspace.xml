@@ -4,6 +4,7 @@
     <list default="true" id="4d3e19f5-b3ee-49de-8c9d-0eb4dcce7272" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.html" afterPath="$PROJECT_DIR$/blog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carousel/js/config.js" afterPath="$PROJECT_DIR$/carousel/js/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carousel/css/index.css" afterPath="$PROJECT_DIR$/carousel/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carousel/js/index.js" afterPath="$PROJECT_DIR$/carousel/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,8 +33,8 @@
       <file leaf-file-name="blog.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20183486" vertical-offset="11410" max-vertical-offset="12060">
-              <caret line="768" column="28" selection-start-line="768" selection-start-column="28" selection-end-line="768" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.5045872" vertical-offset="5605" max-vertical-offset="12060">
+              <caret line="392" column="78" selection-start-line="392" selection-start-column="78" selection-end-line="392" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -42,8 +43,8 @@
       <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/carousel/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.888889" vertical-offset="0" max-vertical-offset="510">
-              <caret line="16" column="145" selection-start-line="16" selection-start-column="145" selection-end-line="16" selection-end-column="145" />
+            <state vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="495">
+              <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -52,8 +53,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/carousel/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0535715" vertical-offset="114" max-vertical-offset="2880">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state vertical-scroll-proportion="-5.892857" vertical-offset="1755" max-vertical-offset="2880">
+              <caret line="139" column="23" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -62,8 +63,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/carousel/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5892856" vertical-offset="1194" max-vertical-offset="1980">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.214286" vertical-offset="1137" max-vertical-offset="2115">
+              <caret line="99" column="48" selection-start-line="99" selection-start-column="48" selection-end-line="99" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -78,10 +79,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/carousel/index.html" />
-        <option value="$PROJECT_DIR$/carousel/css/index.css" />
-        <option value="$PROJECT_DIR$/carousel/js/index.js" />
         <option value="$PROJECT_DIR$/carousel/js/config.js" />
         <option value="$PROJECT_DIR$/blog.html" />
+        <option value="$PROJECT_DIR$/carousel/css/index.css" />
+        <option value="$PROJECT_DIR$/carousel/js/index.js" />
       </list>
     </option>
   </component>
@@ -320,34 +321,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/carousel/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="495">
+          <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/carousel/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0535715" vertical-offset="114" max-vertical-offset="2880">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state vertical-scroll-proportion="-5.892857" vertical-offset="1755" max-vertical-offset="2880">
+          <caret line="139" column="23" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/carousel/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5892856" vertical-offset="1194" max-vertical-offset="1980">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/carousel/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.888889" vertical-offset="0" max-vertical-offset="510">
-          <caret line="16" column="145" selection-start-line="16" selection-start-column="145" selection-end-line="16" selection-end-column="145" />
+        <state vertical-scroll-proportion="-6.214286" vertical-offset="1137" max-vertical-offset="2115">
+          <caret line="99" column="48" selection-start-line="99" selection-start-column="48" selection-end-line="99" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20183486" vertical-offset="11410" max-vertical-offset="12060">
-          <caret line="768" column="28" selection-start-line="768" selection-start-column="28" selection-end-line="768" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.5045872" vertical-offset="5605" max-vertical-offset="12060">
+          <caret line="392" column="78" selection-start-line="392" selection-start-column="78" selection-end-line="392" selection-end-column="78" />
           <folding />
         </state>
       </provider>

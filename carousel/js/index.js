@@ -69,11 +69,16 @@ $(document).ready(function() {
         $('#img'+i).click(function(event) {
             var id = parseInt(event.target.id.substr(3,1));
             $("iframe").attr({"src":videolist[id].videosrc});
-            $("iframe").css({"z-index":1,"left":"140px","top":"2px","margin-right":"50px","zoom":"103%"});
-            $("#img"+id).css({"visibility":"hidden"});
+            $("iframe").css({"z-index":1,"left":"183px","top":"2px","margin-right":"50px"});
+            $("iframe").animate({width:"540px",height:"360px","zoom":"103%"},"slow",function(){});
+            if(id == current) {
+                $("#img" + id).css({"visibility": "hidden"});
+
+                $("#title"+id).css("color","#fff");
+            }
             $(".innerimg img").css("opacity","0.3");
 
-            $("#title"+id).css("color","#fff");
+            $('#btn_video').hide();
 
             //$("#div_img").append("<iframe id='cur_video"+id+"' width='450' height='320' src='"+ videolist[id].videosrc + " 'frameborder='1' allowfullscreen></iframe>");
             if(id != current){
@@ -89,10 +94,10 @@ $(document).ready(function() {
     $('#btn_video').click(function(){
 
         
-        $("iframe").attr({"src":videolist[current].videosrc,"width":"500","height":"340","isAutoPlay":true});
+        $("iframe").attr({"src":videolist[current].videosrc,"width":"540","height":"360"});
         $('iframe').attr('src', $('iframe').attr('src'));
 
-        $("iframe").css({"z-index":1,"left":"140px","top":"2px","margin-right":"50px","zoom":"103%"});
+        $("iframe").css({"z-index":1,"left":"183px","top":"2px","margin-right":"50px","zoom":"103%"});
         $("#img"+current).css({"visibility":"hidden"});
         $(".innerimg img").css("opacity","0.3");
 
@@ -109,13 +114,17 @@ $(document).ready(function() {
         //if(id < 0 || id >= videonum)
         //    return;
         if(id<0)return;
-        $('.innerimg').animate({left:'-='+(id-current)*510+'px'},500,function(){});
+        $('.innerimg').animate({left:'-='+(id-current)*585+'px'},500,function(){});
+        $("#img"+current).css({"background-color":"#888","visibility":"visible"});
+
+        $("#article-title div").css("color","#888");
         current = id;
         $('li').removeClass("hover-style");
         $('#li'+current).addClass("hover-style");
         $("iframe").css("z-index",-1).attr("src","");
-        $(".innerimg img").css({"opacity":"1"});
-        $("#article-title").css("color","#888");
+        $(".innerimg img").css({"opacity":"0.3"});
+        $("#title"+current).css("color","#fff");
+        $("#img"+current).css({"background-color":"#fff","opacity":"1"});
 
         //$('img').removeClass("img-current");
         //$('#img'+ current).addClass("img-current");
