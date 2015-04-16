@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#btn_video').hide();
     var videonum = videolist.length;
 
-    //<iframe height=498 width=510 src="http://player.youku.com/embed/XOTIxNTUxMDIw" frameborder=0 allowfullscreen></iframe>
+    //<iframe height=498 width=510 src="http://player.youku.com/iframe/XOTIxNTUxMDIw" frameborder=0 allowfullscreen></iframe>
 
     //根据视频个数生成图片预览列表
     for(var i = 0; i < videonum; i++){
@@ -68,7 +68,7 @@ $(document).ready(function() {
 
         $('#img'+i).click(function(event) {
             var id = parseInt(event.target.id.substr(3,1));
-            $("iframe").attr({"src":videolist[id].videosrc+"?isAutoPlay=true"});
+            $("iframe").attr({"src":videolist[id].videosrc});
             $("iframe").css({"z-index":1,"left":"140px","top":"2px","margin-right":"50px","zoom":"103%"});
             $("#img"+id).css({"visibility":"hidden"});
             $(".innerimg img").css("opacity","0.3");
@@ -88,7 +88,10 @@ $(document).ready(function() {
     });
     $('#btn_video').click(function(){
 
-        $("iframe").attr({"src":videolist[current].videosrc,"width":"500","height":"340"});
+        
+        $("iframe").attr({"src":videolist[current].videosrc,"width":"500","height":"340","isAutoPlay":true});
+        $('iframe').attr('src', $('iframe').attr('src'));
+
         $("iframe").css({"z-index":1,"left":"140px","top":"2px","margin-right":"50px","zoom":"103%"});
         $("#img"+current).css({"visibility":"hidden"});
         $(".innerimg img").css("opacity","0.3");
@@ -110,7 +113,7 @@ $(document).ready(function() {
         current = id;
         $('li').removeClass("hover-style");
         $('#li'+current).addClass("hover-style");
-        $("iframe").css("z-index",-1);
+        $("iframe").css("z-index",-1).attr("src","");
         $(".innerimg img").css({"opacity":"1"});
         $("#article-title").css("color","#888");
 
