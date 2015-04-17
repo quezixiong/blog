@@ -46,6 +46,10 @@ iframe{
     left: 145px;
     top: 20px;
     -webkit-transform: translate(88px);
+    transform: translate(88px);
+    -moz-transform: translate(88px);
+    -o-transform: translate(88px);
+
     /*-webkit-animation:myfirst 2s;*/
 }
 .img-current{
@@ -194,4 +198,13 @@ iframe{
 
 #sidebarWrapper {
     margin-right: -250px;
+}
+#canvasWrapper {
+    max-width: initial;
+ }
+.main-content {
+    margin-right: 0px;
+}
+#page {
+    width: 925px;
 }
