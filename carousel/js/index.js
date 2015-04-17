@@ -68,7 +68,7 @@ $(document).ready(function() {
             var id = parseInt(event.target.id.substr(3,1));
             $("iframe").attr({"src":videolist[id].videosrc});
             $('iframe').attr('src', $('iframe').attr('src'));
-            $("iframe").css({"z-index":1,"margin-right":"50px"});
+            $("iframe").css({"z-index":1,"margin-right":"40px"});
             //$("iframe").animate({width:"543px",height:"360px","zoom":"103%"},"slow",function(){});
             //$("iframe").css({"z-index":1,"left":"183px","top":"2px","margin-right":"50px"});
             //$("iframe").animate({width:"543px",height:"360px","zoom":"103%"},"slow",function(){});
@@ -94,7 +94,7 @@ $(document).ready(function() {
     $('#btn_video').click(function(){
         $("iframe").attr({"src":videolist[current].videosrc});
         $('iframe').attr('src', $('iframe').attr('src'));
-        $("iframe").css({"z-index":1,"margin-right":"50px"});
+        $("iframe").css({"z-index":1,"margin-right":"40px"});
 
         //$("iframe").css({"z-index":1,"left":"183px","top":"2px","margin-right":"50px"});
         //$("iframe").animate({width:"543px",height:"360px","zoom":"103%"},"slow",function(){});
@@ -114,7 +114,7 @@ $(document).ready(function() {
         //if(id < 0 || id >= videonum)
         //    return;
         if(id<0)return;
-        $('.innerimg').animate({left:'-='+(id-current)*660+'px'},500,function(){});
+        $('.innerimg').animate({left:'-='+(id-current)*510+'px'},500,function(){});
         $("#img"+current).css({"background-color":"#333","visibility":"visible"});
         $("#article-title div").css("color","#888");
         current = id;
