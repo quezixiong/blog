@@ -217,13 +217,10 @@ iframe{
 }
 
 
-.modal-title {
+.modal-videotitle {
     color: #ffffff;
-    margin-left: 20px;
-}
-
-h2 {
-    color: #ffffff;
+    position: absolute;
+    left: 30px;
 }
 /*#videoModal .modal-body{*/
     /*position: absolute;*/

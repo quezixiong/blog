@@ -92,7 +92,7 @@ $(document).ready(function() {
         });
     }
 
-    $(".modal-title").append(videolist[current].head);
+    $(".modal-videotitle").append(videolist[current].title);
     //播放按钮事件添加
     $('#btn_video').mouseover (function(){
         $('#btn_video').show();
