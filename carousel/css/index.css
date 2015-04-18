@@ -21,12 +21,12 @@ iframe{
     /*display: none;*/
     /*width: 470px;*/
     /*height: 330px;*/
-    width: 800px;
-    height: 600px;
-    position: absolute;
+    width: 850px;
+    height: 560px;
+    /*position: absolute;*/
     /*left: 97px;*/
-    top: 100px;
-    z-index: -1;
+    /*top: 100px;*/
+    /*z-index: -1;*/
 }
 .innerimg img:first-child {
     margin-left: -60px;
@@ -214,8 +214,11 @@ iframe{
 .modal-backdrop.in {
     opacity: 0.6;
 }
-#videoModal .modal-body{
-    position: absolute;
-    top: -100px;
-
+h2 {
+    color: #ffffff;
 }
+/*#videoModal .modal-body{*/
+    /*position: absolute;*/
+    /*top: -100px;*/
+
+/*}*/
