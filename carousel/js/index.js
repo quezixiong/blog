@@ -18,10 +18,13 @@ $(document).ready(function() {
     //箭头导航事件添加
     var cur_video = document.getElementsByTagName("#cur_video");
 
+    $(".ol_nav .cover li").tooltip();
+    $('[data-toggle="tooltip"]').tooltip();
     $(".ol_nav li").hover(function(){
         var id = parseInt(event.target.id.substr(2,1));
-        $(this).attr({"title":videolist[id].head,"data-toggle":"tooltip","data-placement":"top"});
+        $(this).attr({"data-toggle":"tooltip","data-placement":"top","title":videolist[id].head});
     },function(){});
+
     $('#imgpre').click(function(){
         $("#img"+current).css("visibility","visible");
 
@@ -132,5 +135,4 @@ $(document).ready(function() {
         $("#img"+current).css({"opacity":"1"});
 
     }
-    $(".ol_nav li").tooltip();
 });
