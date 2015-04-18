@@ -1,0 +1,43 @@
+
+### Mac ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+### Eclipse ###
+.settings/
+tmp/
+proguard/
+.externalToolBuilders/
+.metadata
+.loadpath
+.project
+.classpath
+.cproject
+.buildpath
+.target
+.texlipse
+*.pydevproject
+*.launch
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+
+### Intellij ###
+/out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
