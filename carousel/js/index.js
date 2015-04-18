@@ -2,26 +2,36 @@ $(document).ready(function() {
     $('#btn_video').hide();
     var videonum = videolist.length;
 
-    //<iframe height=498 width=510 src="http://player.youku.com/iframe/XOTIxNTUxMDIw" frameborder=0 allowfullscreen></iframe>
-
     //根据视频个数生成图片预览列表
     for(var i = 0; i < videonum; i++){
         $("#div_img").append("<img id='img" + i + "' src='" + videolist[i].imgsrc + "'></img>");
-        //$("#div_img").append("<iframe id='cur_video"+i+"' width='450' height='320' src='"+ videolist[i].videosrc + " 'frameborder='1' allowfullscreen></iframe>");
         $("#article-title").append("<div id='title"+i+"'>"+videolist[i].headerinfo+"</div>");
     }
 
     //根据视频个数生成下面方块导航列表
     for(var i = 0; i < videonum; i++){
-        $(".ol_nav").append("<li id=li"+i+"></li>");
+        $(".ol_nav").append("<div id=coverli"+i+"><li id=li"+i+"></li></div>");
     }
     //当前视频预览图显示初始化
     var current = 0; //记录当前视频、视频预览
     switch_to(current);
     //箭头导航事件添加
-    var cur_video = document.getElementsByTagName("iframe");
+    var cur_video = document.getElementsByTagName("#cur_video");
 
+    $(".ol_nav li").hover(function(){
+        var id = parseInt(event.target.id.substr(2,1));
+        $(this).attr({"title":videolist[id].head,"data-toggle":"tooltip","data-placement":"top"});
+    },function(){});
     $('#imgpre').click(function(){
+        $("#img"+current).css("visibility","visible");
+
+        switch_to(current-1);
+
+        //if(current - 1 < 0){
+        //    switch_to(4);
+        //}
+    });
+    $('.pre').click(function(){
         $("#img"+current).css("visibility","visible");
 
         switch_to(current-1);
@@ -39,7 +49,15 @@ $(document).ready(function() {
             switch_to(0);
         }
     });
+    $('.next').click(function(){
+        $("#img"+current).css("visibility","visible");
 
+        switch_to(current+1);
+
+        if(current + 1 > videonum){
+            switch_to(0);
+        }
+    });
     for(var i = 0; i < videonum; i++){
         //方块导航事件添加
         $('#li'+i).click(function(event){
@@ -62,7 +80,7 @@ $(document).ready(function() {
             }
         });
         //点击图片事件
-        var cur_video = document.getElementsByTagName("iframe");
+        //var cur_video = document.getElementsByTagName("#cur_video");
 
         $('#img'+i).click(function(event) {
             var id = parseInt(event.target.id.substr(3,1));
@@ -80,7 +98,6 @@ $(document).ready(function() {
 
             $('#btn_video').hide();
 
-            //$("#div_img").append("<iframe id='cur_video"+id+"' width='450' height='320' src='"+ videolist[id].videosrc + " 'frameborder='1' allowfullscreen></iframe>");
             if(id != current){
                 switch_to(id);
             }
@@ -96,8 +113,6 @@ $(document).ready(function() {
         $('iframe').attr('src', $('iframe').attr('src'));
         $("iframe").css({"z-index":1,"margin-right":"40px"});
 
-        //$("iframe").css({"z-index":1,"left":"183px","top":"2px","margin-right":"50px"});
-        //$("iframe").animate({width:"543px",height:"360px","zoom":"103%"},"slow",function(){});
         $("#img"+current).css({"visibility":"hidden"});
         $(".innerimg img").css("opacity","0.5");
 
@@ -125,10 +140,6 @@ $(document).ready(function() {
         $("#title"+current).css("color","#fff");
         $("#img"+current).css({"opacity":"1"});
 
-        //$('img').removeClass("img-current");
-        //$('#img'+ current).addClass("img-current");
     }
+    $(".ol_nav li").tooltip();
 });
-
-
-

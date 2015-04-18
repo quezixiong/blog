@@ -16,10 +16,8 @@
     position: relative;
 }
 iframe{
-    /*margin-right: 60px;*/
-    /*display: none;*/
     position: absolute;
-    left: 97px;
+    left: 96px;
     top: 20px;
     z-index: -1;
 }
@@ -109,6 +107,27 @@ iframe{
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
 }
+.pre {
+    width: 20px;
+    height: 20px;
+    display: inline;
+    position: absolute;
+    left: 39%
+}
+.next{
+    width: 20px;
+    height: 20px;
+    display: inline;
+    position: absolute;
+    right: 32%;
+    transform: rotate(180deg);
+}
+.pre:hover {
+    cursor: pointer;
+}
+.next:hover {
+    cursor: pointer;
+}
 #imgpre:hover {
     opacity: 1;
     cursor: pointer;
@@ -140,16 +159,24 @@ iframe{
     margin-left: 2px;
     width: 18px;
     height: 10px;
-    cursor: pointer;
     margin-top: 3px;
 }
 .ol_nav li:hover {
     border: 1px solid #888;
-    background-color: #333;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.ol_nav div{
+    width: 25px;
+    height: 17px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    float: left;
+    z-index: -1;
 }
 
 .hover-style {
-    background-color: #555;
+    background-color: #999;
     width: 19px;
     height: 11px;
 }
