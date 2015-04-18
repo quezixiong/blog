@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     //根据视频个数生成下面方块导航列表
     for(var i = 0; i < videonum; i++){
-        $(".ol_nav").append("<div id=coverli"+i+"><li id=li"+i+"></li></div>");
+        $(".ol_nav").append("<div class='cover' id=coverli"+i+"><li id=li"+i+"></li></div>");
     }
     //当前视频预览图显示初始化
     var current = 0; //记录当前视频、视频预览
@@ -58,12 +58,13 @@ $(document).ready(function() {
             switch_to(0);
         }
     });
+    //$("#coverli"+current).css({"visibility":"visible"});
     for(var i = 0; i < videonum; i++){
         //方块导航事件添加
         $('#li'+i).click(function(event){
             var id = parseInt(event.target.id.substr(2,1));
             $("img").css("visibility","visible");
-
+            //$("#coverli"+id).css({"visibility":"visible"});
             switch_to(id);
         });
         //显示播放按钮事件
