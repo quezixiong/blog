@@ -61,28 +61,13 @@ $(document).ready(function() {
                 $('#btn_video').hide();
             }
         });
-        //点击图片事件
-        var cur_video = document.getElementsByTagName("iframe");
 
         $('#img'+i).click(function(event) {
             var id = parseInt(event.target.id.substr(3,1));
-            $("iframe").attr({"src":videolist[id].videosrc});
-            $('iframe').attr('src', $('iframe').attr('src'));
-            $("iframe").css({"z-index":1,"margin-right":"40px"});
-            //$("iframe").animate({width:"543px",height:"360px","zoom":"103%"},"slow",function(){});
-            //$("iframe").css({"z-index":1,"left":"183px","top":"2px","margin-right":"50px"});
-            //$("iframe").animate({width:"543px",height:"360px","zoom":"103%"},"slow",function(){});
-            if(id == current) {
-                $("#img" + id).css({"visibility": "hidden"});
-                $("#title"+id).css("color","#fff");
-            }
-            $(".innerimg img").css("opacity","0.5");
-
-            $('#btn_video').hide();
-
-            //$("#div_img").append("<iframe id='cur_video"+id+"' width='450' height='320' src='"+ videolist[id].videosrc + " 'frameborder='1' allowfullscreen></iframe>");
-            if(id != current){
+            if(id != current) {
                 switch_to(id);
+            }else{
+                show_cur_video();
             }
         });
     }
@@ -92,23 +77,23 @@ $(document).ready(function() {
         $('#btn_video').show();
     });
     $('#btn_video').click(function(){
+        show_cur_video();
+    });
+
+    // video modal 被隐藏时事件 --- 关闭视频
+    $("#videoModal").on("hide.bs.modal", function(){
+        $("iframe").attr({"src":""});
+    });
+
+
+    var show_cur_video = function(){
         $("iframe").attr({"src":videolist[current].videosrc});
-        $('iframe').attr('src', $('iframe').attr('src'));
-        $("iframe").css({"z-index":1,"margin-right":"40px"});
-
-        //$("iframe").css({"z-index":1,"left":"183px","top":"2px","margin-right":"50px"});
-        //$("iframe").animate({width:"543px",height:"360px","zoom":"103%"},"slow",function(){});
-        $("#img"+current).css({"visibility":"hidden"});
-        $(".innerimg img").css("opacity","0.5");
-
+        $("iframe").css({"z-index":1});
+        //$(".innerimg img").css("opacity","0.5");
         $("#title"+current).css("color","#fff");
         $('#btn_video').hide();
-    });
-    //var cur_video = document.getElementById("cur_video");
-    //$('#myModal').on('hidden.bs.modal', function(){
-    //    //if(!cur_video.src)
-    //        cur_video.src = "";
-    //});
+        $("#videoModal").modal('show');
+    };
 
     function switch_to(id){
         //if(id < 0 || id >= videonum)
@@ -124,9 +109,6 @@ $(document).ready(function() {
         $(".innerimg img").css({"opacity":"0.5"});
         $("#title"+current).css("color","#fff");
         $("#img"+current).css({"opacity":"1"});
-
-        //$('img').removeClass("img-current");
-        //$('#img'+ current).addClass("img-current");
     }
 });
 

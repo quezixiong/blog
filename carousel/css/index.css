@@ -18,9 +18,13 @@
 iframe{
     /*margin-right: 60px;*/
     /*display: none;*/
+    /*width: 470px;*/
+    /*height: 330px;*/
+    width: 800px;
+    height: 600px;
     position: absolute;
-    left: 97px;
-    top: 20px;
+    /*left: 97px;*/
+    top: 100px;
     z-index: -1;
 }
 .innerimg img:first-child {
@@ -175,6 +179,10 @@ iframe{
     /*font-size: 16px;*/
     word-wrap: break-word;
     white-space: normal;
+}
+
+.modal-backdrop.in {
+    opacity: 0.6;
 }
 
 /*#sidebarWrapper {*/
