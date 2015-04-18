@@ -1,6 +1,6 @@
 .main-content1 {
     width: 100%;
-    height: 495px;
+    height: 520px;
     padding:30px 0 0 0px;
     background-image: url('../imgs/back.jpg');
     background-size: cover;
@@ -22,11 +22,11 @@ iframe{
     /*width: 470px;*/
     /*height: 330px;*/
     width: 800px;
-    height: 600px;
-    position: absolute;
+    height: 550px;
+    /*position: absolute;*/
     /*left: 97px;*/
-    top: 100px;
-    z-index: -1;
+    /*top: 100px;*/
+    /*z-index: -1;*/
 }
 .innerimg img:first-child {
     margin-left: -60px;
@@ -119,14 +119,14 @@ iframe{
     height: 20px;
     display: inline;
     position: absolute;
-    left: 38%
+    left: 36%
 }
 .next{
     width: 20px;
     height: 20px;
     display: inline;
     position: absolute;
-    right: 31%;
+    right: 33%;
     transform: rotate(180deg);
 }
 .pre:hover {
@@ -157,7 +157,7 @@ iframe{
 }
 .ol_nav {
     list-style-type: none;
-    margin-left: 37%;
+    margin-left: 35%;
     margin-top: 2px;
 }
 .ol_nav li {
@@ -214,8 +214,8 @@ iframe{
 .modal-backdrop.in {
     opacity: 0.6;
 }
-#videoModal .modal-body{
-    position: absolute;
-    top: -100px;
 
+.modal-title {
+    color: #ffffff;
+    margin-left: 20px;
 }
