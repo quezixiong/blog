@@ -1,17 +1,26 @@
 $(document).ready(function() {
     $('#btn_video').hide();
     var videonum = videolist.length;
-
+    $(".pre").hover(function(){
+        $(".pre").attr("src","carousel/imgs/pre2.png");
+    },function(){
+        $(".pre").attr("src","carousel/imgs/pre1.png");
+    });
+    $(".next").hover(function(){
+        $(".next").attr("src","carousel/imgs/pre2.png");
+    },function(){
+        $(".next").attr("src","carousel/imgs/pre1.png");
+    });
     //根据视频个数生成图片预览列表
     for(var i = 0; i < videonum; i++){
         $("#div_img").append("<img id='img" + i + "' src='" + videolist[i].imgsrc + "'></img>");
         $("#article-title").append("<div id='title"+i+"'>"+videolist[i].headerinfo+"</div>");
     }
-
     //根据视频个数生成下面方块导航列表
     for(var i = 0; i < videonum; i++){
-        $(".ol_nav").append("<div class='cover' id=coverli"+i+"><li id=li"+i+"></li></div>");
+        $(".ol_nav").append("<li id=li"+i+"></li>");
     }
+    //<div  class='cover' id=coverli"+i+">
     //当前视频预览图显示初始化
     var current = 0; //记录当前视频、视频预览
     switch_to(current);
@@ -124,11 +133,13 @@ $(document).ready(function() {
         //    return;
         if(id<0)return;
         $('.innerimg').animate({left:'-='+(id-current)*510+'px'},500,function(){});
+        $('.cover').animate({left:'+='+(id-current)*20+'px'},500,function(){});
         $("#img"+current).css({"background-color":"#333","visibility":"visible"});
         $("#article-title div").css("color","#888");
         current = id;
         $('li').removeClass("hover-style");
         $('#li'+current).addClass("hover-style");
+
         $("iframe").css("z-index",-1).attr("src","");
         $(".innerimg img").css({"opacity":"0.5"});
         $("#title"+current).css("color","#fff");
