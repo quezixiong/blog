@@ -1,4 +1,5 @@
 .main-content1 {
+    min-width: 650px;
     width: 100%;
     height: 510px;
     /*padding:30px 0 0 0px;*/
@@ -43,6 +44,35 @@ iframe{
     padding: 3px;
     background-color: #777;
     position: relative;
+}
+#play-full-story {
+}
+#play-full-story div:first-child {
+    margin-left: -60px;
+}
+#play-full-story div {
+    width: 464px;
+    height: 0;
+    z-index: 1001;
+    margin-right: 46px;
+    margin-top: 5px;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    float: left;
+    top: -86px;
+    left: 3px;
+    color: #d6d6dc;
+    overflow: hidden;
+
+    transition: height 1s, top 1s;
+    -moz-transition: height 1s, top 1s;	/* Firefox 4 */
+    -webkit-transition: height 1s, top 1s;	/* Safari 和 Chrome */
+    -o-transition: height 1s, top 1s;	/* Opera */
+}
+#play-full-story div span {
+    margin-left: 5px;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
 }
 .innerimg {
     cursor: pointer;
@@ -120,18 +150,24 @@ iframe{
 .pre {
     width: 20px;
     height: 20px;
-    display: inline;
-    position: absolute;
-    left: 36%;
-    top: 90%;
+    float: left;
+    margin-right: 10px;
+    margin-top: -4px;
+    /*display: inline;*/
+    /*position: absolute;*/
+    /*left: 36%;*/
+    /*top: 90%;*/
 }
 .next{
     width: 20px;
     height: 20px;
-    display: inline;
-    position: absolute;
-    right: 38.2%;
-    top: 90%;
+    float: left;
+    margin-left: 14px;
+    margin-top: -4px;
+    /*display: inline;*/
+    /*position: absolute;*/
+    /*right: 38.2%;*/
+    /*top: 90%;*/
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -158,8 +194,8 @@ iframe{
     background-color: #666;
     border: 0;
     opacity: 0.6;
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: 175px;
     left: 290px;
     z-index: 1;
 }
@@ -201,23 +237,30 @@ iframe{
     font-weight: bold;
     color: #000000;
 }
+
 #article-title {
     margin-left: -50px;
     float: left;
-    font-family: "proxima-nova";
+    font-family: "Microsoft YaHei";
 }
+
 #article-title div {
     display: inline-block;
     width: 470px;
     margin-right: 40px;
     /*margin-top: 15px;*/
     color: #888;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
 }
 #article-title div p{
     display: block;
-    /*font-size: 16px;*/
+    font-size: 16px;
     word-wrap: break-word;
     white-space: normal;
+    font-family: "Georgia";
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .modal-backdrop.in {
