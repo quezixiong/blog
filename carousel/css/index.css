@@ -166,7 +166,7 @@ iframe{
 .ol_nav {
     list-style-type: none;
     margin-left: 35.2%;
-    margin-top: 2px;
+    margin-top: -15px;
 }
 .ol_nav li {
     float: left;
@@ -174,11 +174,12 @@ iframe{
     margin-left: 4px;
     width: 16px;
     height: 10px;
+    background-color: #444444;
     /*margin-top: 3px;*/
 }
 .ol_nav li:hover {
     /*border: 1px solid #222;*/
-    /*background-color: #ffffff;*/
+    background-color: #5f5f5f;
     cursor: pointer;
 }
 /*.ol_nav .cover{*/
@@ -191,7 +192,7 @@ iframe{
 /*}*/
 
 .hover-style {
-    background-color: #777;
+    background-color: #5f5f5f;
     width: 19px;
     height: 11px;
 }
@@ -232,11 +233,12 @@ iframe{
 .cover {
     width: 22px;
     height: 16px;
-    float: left;
+    /*float: left;*/
     border: 1px solid #666;
-    position: relative;
-    top: -3px;
-    left: 41.3%;
+    /*position: relative;*/
+    /*top: -3px;*/
+    /*left: 41.3%;*/
+    background-color: transparent;
     /*position: relative;*/
     /*top: -2px;*/
     /*padding-top: 2px;*/

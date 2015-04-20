@@ -20,6 +20,11 @@ $(document).ready(function() {
     for(var i = 0; i < videonum; i++){
         $(".ol_nav").append("<li id=li"+i+"></li>");
     }
+    $(".cover").position({
+        my: "center center",
+        at: "center center",
+        of: $('#li0')
+    });
     //<div  class='cover' id=coverli"+i+">
     //当前视频预览图显示初始化
     var current = 0; //记录当前视频、视频预览
@@ -137,13 +142,16 @@ $(document).ready(function() {
         $("#img"+current).css({"background-color":"#333","visibility":"visible"});
         $("#article-title div").css("color","#888");
         current = id;
-        $('li').removeClass("hover-style");
-        $('#li'+current).addClass("hover-style");
+        $('.ol_nav li').css("background-color","#444");
+        $('#li'+current).css("background-color","#5f5f5f");
+
+        //$('li').removeClass("hover-style");
+        //$('#li'+current).addClass("hover-style");
 
         $("iframe").css("z-index",-1).attr("src","");
         $(".innerimg img").css({"opacity":"0.5"});
         $("#title"+current).css("color","#fff");
         $("#img"+current).css({"opacity":"1"});
-
     }
+
 });
