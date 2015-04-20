@@ -201,8 +201,9 @@ iframe{
 }
 .ol_nav {
     list-style-type: none;
-    margin-left: 35.2%;
+    margin-left: 30%;
     margin-top: -15px;
+
 }
 .ol_nav li {
     float: left;
@@ -272,6 +273,8 @@ iframe{
     color: #ffffff;
     position: absolute;
     left: 30px;
+    font-family: "Georgia";
+    font-size: 16px;
 }
 .cover {
     width: 22px;
