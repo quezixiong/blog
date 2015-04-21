@@ -54,9 +54,10 @@ $(document).ready(function() {
         switch_to(current-1);
     });
     $('#imgnext, .next').click(function(){
-        switch_to(current+1);
-        if(current + 1 > videonum){
+        if(current + 1 >= videonum){
             switch_to(0);
+        }else{
+            switch_to(current+1);
         }
     });
 
@@ -134,6 +135,4 @@ $(document).ready(function() {
             autoplay: true
         });
     }
-
-
 });
