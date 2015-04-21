@@ -13,7 +13,7 @@ $(document).ready(function() {
     for(var i = 0; i < videonum; i++){
         $("#div_img").append("<img id='img" + i + "' src='" + videolist[i].imgsrc + "'></img>");
         $("#article-title").append("<div id='title"+i+"'>"+videolist[i].headerinfo+"</div>");
-        $("#play-full-story").append("<div id='play-full"+i+"'><span>play full story</span></div>");
+        $("#play-full-story").append("<div id='play-full"+i+"'><span></span></div>");
     }
     //根据视频个数生成下面方块导航列表
     for(var i = 0; i < videonum; i++){
@@ -89,19 +89,26 @@ $(document).ready(function() {
             var id = parseInt(event.target.id.substr(3,1));
             if(id != current) {
                 switch_to(id);
-            }else{
-                show_youku_video();
             }
         });
     }
     //播放按钮事件添加
-    $('#btn_video_youku').mouseover(function(){
-        $('#btn_video_yuku').show();
+    $('#btn_video_youku').hover(function(){
+        $('#btn_video_youku').show();
         $('#btn_video_youtube').show();
+        $("#play-full-story div span").text("play full story with Youku");
+        $("#play-full-story #play-full"+current).css({"height": "26px","top": "-86px","opacity":"1"});
+    }, function(){
+        $("#play-full-story div").css({"height": "1px","top": "-61px","opacity":"0"});
     });
-    $('#btn_video_youtube').mouseover(function(){
-        $('#btn_video_yuku').show();
+
+    $('#btn_video_youtube').hover(function(){
+        $('#btn_video_youku').show();
         $('#btn_video_youtube').show();
+        $("#play-full-story div span").text("play full story with Youtube");
+        $("#play-full-story #play-full"+current).css({"height": "26px","top": "-86px","opacity":"1"});
+    }, function(){
+        $("#play-full-story div").css({"height": "1px","top": "-61px","opacity":"0"});
     });
     $('#btn_video_youku').click(function(){
         show_youku_video();
@@ -113,15 +120,15 @@ $(document).ready(function() {
 
     var show_youku_video = function(){
         $("#title"+current).css("color","#fff");
-        //$('#btn_video_youku').hide();
-        //$('#btn_video_youtube').hide();
+        $('#btn_video_youku').hide();
+        $('#btn_video_youtube').hide();
         $("#videoModal_youku").modal('show');
     };
     var show_youtube_video = function(){
         $("iframe").attr({"src":videolist[current].youtube_src});
         $("#title"+current).css("color","#fff");
-        //$('#btn_video_youku').hide();
-        //$('#btn_video_youtube').hide();
+        $('#btn_video_youku').hide();
+        $('#btn_video_youtube').hide();
         $("#videoModal_youtube").modal('show');
     };
     //video modal 被隐藏时事件 --- 关闭视频
@@ -142,8 +149,6 @@ $(document).ready(function() {
         $("#article-title div").css("color","#888");//切换时所有的标题暗下来，只有当前亮
         $("#title"+current).css("color","#fff");
 
-        $("#play-full-story div").css({"height": "1px","top": "-61px","opacity":"0"});
-        $("#play-full-story #play-full"+current).css({"height": "26px","top": "-86px","opacity":"1"});
         //为modal上的div添加标题
         $(".modal-videotitle").text(videolist[current].title);
         player = new YKU.Player('youkuplayer',{
