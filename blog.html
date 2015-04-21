@@ -479,7 +479,8 @@
                                                                     <div class="modal-dialog modal-lg">
                                                                         <div class="modal-body">
                                                                             <h5 class="modal-videotitle"></h5>
-                                                                            <iframe id='cur_video' src='' frameborder='1' allowfullscreen="true"></iframe>
+                                                                            <!--<iframe id='cur_video' src='' frameborder='1' allowfullscreen="true"></iframe>-->
+                                                                            <div id="youkuplayer"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -591,33 +592,21 @@
 <script>
     Squarespace.afterBodyLoad(Y);
 </script>
-<!--<div id="youkuplayer" style="width:480px;height:400px"></div>-->
-<!--<script type="text/javascript" src="http://player.youku.com/jsapi">-->
-    <!--player = new YKU.Player('youkuplayer',{-->
-        <!--styleid: '0',-->
-        <!--client_id: '019ae968a3e28cbd',-->
-        <!--vid: '替换成优酷视频ID',-->
-        <!--autoplay: true,-->
-        <!--show_related: true,-->
-        <!--events:{-->
-            <!--onPlayerReady: function(){ /*your code*/ },-->
-            <!--onPlayStart: function(){ /*your code*/ },-->
-            <!--onPlayEnd: function(){ /*your code*/ }-->
-        <!--}-->
-    <!--});-->
-    <!--function playVideo(){-->
-        <!--player.playVideo();-->
-    <!--}-->
-    <!--function pauseVideo(){-->
-        <!--player.pauseVideo();-->
-    <!--}-->
-    <!--function seekTo(s){-->
-        <!--player.seekTo(s);-->
-    <!--}-->
-    <!--function currentTime(){-->
-        <!--return player.currentTime();-->
-    <!--}-->
-<!--</script>-->
+<script type="text/javascript" src="http://player.youku.com/jsapi">
+//    function playVideo(){
+//        player.playVideo();
+//    }
+//    function pauseVideo(){
+//        player.pauseVideo();
+//    }
+//    function seekTo(s){
+//        player.seekTo(s);
+//    }
+//    function currentTime(){
+//        return player.currentTime();
+//    }
+
+</script>
 </body>
 </html>
 

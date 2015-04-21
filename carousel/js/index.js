@@ -99,14 +99,12 @@ $(document).ready(function() {
     });
 
     // video modal 被隐藏时事件 --- 关闭视频
-    $("#videoModal").on("hide.bs.modal", function(){
-        $("iframe").attr({"src":""});
-    });
-    //为modal上的iframe添加标题
-    $(".modal-videotitle").append(videolist[current].title);
+    //$("#videoModal").on("hide.bs.modal", function(){
+    //    $("iframe").attr({"src":""});
+    //});
 
     var show_cur_video = function(){
-        $("iframe").attr({"src":videolist[current].videosrc});
+        //$("iframe").attr({"src":videolist[current].videosrc});
         $("#title"+current).css("color","#fff");
         $('#btn_video').hide();
         $("#videoModal").modal('show');
@@ -127,6 +125,15 @@ $(document).ready(function() {
 
         $("#play-full-story div").css({"height": "1px","top": "-61px","opacity":"0"});
         $("#play-full-story #play-full"+current).css({"height": "26px","top": "-86px","opacity":"1"});
+        //为modal上的div添加标题
+        $(".modal-videotitle").text(videolist[current].title);
+        player = new YKU.Player('youkuplayer',{
+            styleid: '0',
+            client_id: '019ae968a3e28cbd',
+            vid: videolist[current].src,
+            autoplay: true
+        });
     }
+
 
 });

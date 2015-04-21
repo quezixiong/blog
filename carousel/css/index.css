@@ -22,6 +22,11 @@ iframe{
     width: 800px;
     height: 550px;
 }
+#youkuplayer {
+    width: 800px;
+    height: 550px;
+    border: 2px solid #eeeeee;
+}
 .innerimg img:first-child {
     margin-left: -60px;
 }
