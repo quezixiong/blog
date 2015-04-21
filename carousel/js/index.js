@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $('#btn_video').hide();
+    $('#btn_video_youku').hide();
+    $('#btn_video_youtube').hide();
+
     var videonum = videolist.length;
     $(".pre,.next").hover(function(){
         $(this).attr("src","carousel/imgs/pre2.png");
@@ -71,13 +73,15 @@ $(document).ready(function() {
          $('#img'+i).hover(function(evevt){
                  var id = parseInt(event.target.id.substr(3,1));
                  if(id == current){
-                     $('#btn_video').show();
+                     $('#btn_video_youku').show();
+                     $('#btn_video_youtube').show();
                  }
          },
          function(event){
              var id = parseInt(event.target.id.substr(3,1));
              if(id == current){
-                 $('#btn_video').hide();
+                 $('#btn_video_youku').hide();
+                 $('#btn_video_youtube').hide();
              }
          });
         //点击当前图片可播放，两侧图片可滑动
@@ -86,30 +90,44 @@ $(document).ready(function() {
             if(id != current) {
                 switch_to(id);
             }else{
-                show_cur_video();
+                show_youku_video();
             }
         });
     }
-
     //播放按钮事件添加
-    $('#btn_video').mouseover(function(){
-        $('#btn_video').show();
+    $('#btn_video_youku').mouseover(function(){
+        $('#btn_video_yuku').show();
+        $('#btn_video_youtube').show();
     });
-    $('#btn_video').click(function(){
-        show_cur_video();
+    $('#btn_video_youtube').mouseover(function(){
+        $('#btn_video_yuku').show();
+        $('#btn_video_youtube').show();
+    });
+    $('#btn_video_youku').click(function(){
+        show_youku_video();
     });
 
-    // video modal 被隐藏时事件 --- 关闭视频
-    //$("#videoModal").on("hide.bs.modal", function(){
-    //    $("iframe").attr({"src":""});
-    //});
+    $('#btn_video_youtube').click(function(){
+        show_youtube_video();
+    });
 
-    var show_cur_video = function(){
-        //$("iframe").attr({"src":videolist[current].videosrc});
+    var show_youku_video = function(){
         $("#title"+current).css("color","#fff");
-        $('#btn_video').hide();
-        $("#videoModal").modal('show');
+        //$('#btn_video_youku').hide();
+        //$('#btn_video_youtube').hide();
+        $("#videoModal_youku").modal('show');
     };
+    var show_youtube_video = function(){
+        $("iframe").attr({"src":videolist[current].youtube_src});
+        $("#title"+current).css("color","#fff");
+        //$('#btn_video_youku').hide();
+        //$('#btn_video_youtube').hide();
+        $("#videoModal_youtube").modal('show');
+    };
+    //video modal 被隐藏时事件 --- 关闭视频
+    $("#videoModal_youtube").on("hide.bs.modal", function(){
+        $("iframe").attr({"src":""});
+    });
 
     function switch_to(id){
         if(id<0)return;
@@ -131,7 +149,7 @@ $(document).ready(function() {
         player = new YKU.Player('youkuplayer',{
             styleid: '0',
             client_id: '019ae968a3e28cbd',
-            vid: videolist[current].src,
+            vid: videolist[current].youku_src,
             autoplay: true
         });
     }
